@@ -1,0 +1,7 @@
+<%= form_for(@order) do |f| %>
+<div class="field">
+  <%= f.label :productlist %><br>
+  <%= f.select :productlist, @products, :prompt => 'Select one!' %>
+  <%= link_to 'Add More', '#', id: 'products-link' %>
+</div>
+<% end %>
